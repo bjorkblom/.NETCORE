@@ -1,0 +1,11 @@
+﻿@page "{restaurantId:int}"
+@model OdeToFood.Pages.Restaurants.DeleteModel
+@{
+    Layout = null;
+}
+
+<h2>Delete @Model.Restaurant.Name</h2>
+<form method="post">
+    <input type="hidden" asp-for="Restaurant.Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
